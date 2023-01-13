@@ -1,5 +1,5 @@
 <?php
-$title = "Login";
+$title = "Log In";
 require_once('../layout/header_login.php');
 ?>
 <script src="script/login_handler.js"></script>
@@ -17,6 +17,10 @@ require_once('../layout/header_login.php');
         <input type="button" name="send" value="LOG IN" onclick="return login()"/>
     </div>
 </form>
+
+<div>
+    <a href="http://localhost/Cooking-Tutorial-Website/lib/signup.php">Sign Up</a>
+</div>
 
 
 <?php
