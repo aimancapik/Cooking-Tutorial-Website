@@ -8,6 +8,4 @@
     
   </head>
   <body>
-<?php
-require_once("menuBar.php");
-?>
+<?php?>

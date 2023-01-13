@@ -2,7 +2,7 @@
 
     <!--Footer-->
 
-    <footer>
+    <!-- <footer>
       <div class="footer_main">
         <div class="footer_tag">
           <h2>Location</h2>
@@ -51,6 +51,6 @@
           ><i class="fa-solid fa-face-grin"></i> WT Master Code</span
         >
       </p>
-    </footer>
+    </footer> -->
   </body>
 </html>
