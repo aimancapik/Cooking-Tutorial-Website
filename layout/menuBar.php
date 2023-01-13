@@ -6,7 +6,7 @@
             <li><a href="#Wishlist">Wishlist</a></li>
             <li><a href="#Recipe">Recipe</a></li>
             <li><a href="#Instructor">Instructor</a></li>
-            <li><a href="#UserProfile">Profile</a></li>
+            <li><a href="http://localhost/Cooking-Tutorial-Website/lib/userprofile.php">Profile</a></li>
             <li><a href="http://localhost/Cooking-Tutorial-Website/lib/login.php">Log Out</a></li>
         </ul>
         
