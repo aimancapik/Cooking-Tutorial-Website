@@ -6,11 +6,8 @@
       <div class="footer_main">
         <div class="footer_tag">
           <h2>Location</h2>
-          <p>Sri Lanka</p>
-          <p>USA</p>
-          <p>India</p>
-          <p>Japan</p>
-          <p>Italy</p>
+          <p>Malaysia</p>
+
         </div>
 
         <div class="footer_tag">
@@ -18,24 +15,18 @@
           <p>Home</p>
           <p>About</p>
           <p>Menu</p>
-          <p>Gallary</p>
           <p>Order</p>
         </div>
 
         <div class="footer_tag">
           <h2>Contact</h2>
-          <p>+94 12 3456 789</p>
-          <p>+94 25 5568456</p>
-          <p>johndeo123@gmail.com</p>
-          <p>foodshop123@gmail.com</p>
+          <p>0195308755</p>
+          
+          <p>aimancapik@gmail.com</p>
+          <p>cooking@gmail.com</p>
         </div>
 
-        <div class="footer_tag">
-          <h2>Our Service</h2>
-          <p>Fast Delivery</p>
-          <p>Easy Payments</p>
-          <p>24 x 7 Service</p>
-        </div>
+       
 
         <div class="footer_tag">
           <h2>Follows</h2>
@@ -47,8 +38,8 @@
       </div>
 
       <p class="end">
-        Design by<span
-          ><i class="fa-solid fa-face-grin"></i> WT Master Code</span
+        <span
+          >WEBDEV PROJECT</span
         >
       </p>
     </footer>
