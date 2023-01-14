@@ -2,7 +2,7 @@
 $title = "Home";
 require_once('../layout/header.php');
 ?>
-  <script src="script/recipe_handler.js"></script>
+  <!-- <script src="script/recipe_handler.js"></script> -->
     <!--About-->
 
     <div class="about" id="About">
@@ -36,9 +36,9 @@ require_once('../layout/header.php');
       <h1>Our<span>Menu</span></h1>
 
       <div class="menu_box">
-        <div class="menu_card">
-          <!-- buger ------------------------------------------------------->
-          <form action="http://localhost/Cooking-Tutorial-Website/lib/recipe.php">
+        <!-- buger ------------------------------------------------------->
+        <form id="form">
+            <div class="menu_card">
             <div class="menu_image">
               <img src="../image/buger.jpg" />
             </div>
@@ -48,7 +48,7 @@ require_once('../layout/header.php');
             </div>
 
             <div class="menu_info">
-              <h2 id="smoltitle">Buger</h2>
+              <h2 id="recipe_title">Buger</h2>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
                 assumenda voluptates
@@ -61,41 +61,58 @@ require_once('../layout/header.php');
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
-              <input type="submit" onclick="passvalues();" href="http://localhost/Cooking-Tutorial-Website/lib/recipe.php" class="menu_btn">See Recipe</input>
+              <input type="submit" class="menu_btn" value="See Recipe"></input>
             </div>
           </div>
 
         </form>
+
+        <script>
+          const form = document.getElementById('form');
+          const recipe_title = document.getElementById('recipe_title');
+
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const recipe_title_text = recipe_title.innerText;
+
+            window.localStorage.setItem('recipe_title', recipe_title_text);
+
+            window.location.href = "recipe.php";
+          })
+        </script>
         <!-- buger ------------------------------------------------------->
         <!-- pasta -->
 
-        <div class="menu_card">
-          <div class="menu_image">
-            <img src="../image/pasta.jpg" />
-          </div>
-
-          <div class="small_card">
-            <i class="fa-solid fa-heart"></i>
-          </div>
-
-          <div class="menu_info">
-            <h2>pasta</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
-            </p>
-            <h3>$20.00</h3>
-            <div class="menu_icon">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
+        <form id="form">
+          <div class="menu_card">
+            <div class="menu_image">
+              <img src="../image/pasta.jpg" />
             </div>
-            <a href="#" class="menu_btn">See Recipe</a>
+  
+            <div class="small_card">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+  
+            <div class="menu_info">
+              <h2 id="recipe_title">pasta</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                assumenda voluptates
+              </p>
+              <h3>$20.00</h3>
+              <div class="menu_icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <input type="submit" class="menu_btn" value="See Recipe"></input>
+            </div>
           </div>
-        </div>
-
+        </form>
+        <!-- pasta -->
         <div class="menu_card">
           <div class="menu_image">
             <img src="../image/lasagna.webp" />

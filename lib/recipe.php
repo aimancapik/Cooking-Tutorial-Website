@@ -3,12 +3,7 @@ $title = "Recipe";
 require_once('../layout/header.php');
 ?>
 
-<script>
-    document.getElementById("smoltitle").innerHTML = localStorage.getItem("textvalue");
-</script>
-
-<!-- <h1><?=($smoltitle != null ? $smoltitle : "")?></h1> -->
-<span id="smoltitle"></span>
+<h1 id="recipetitle"></h1>
 
 <div>
     <img src="../image/buger.jpg" />
@@ -22,6 +17,12 @@ require_once('../layout/header.php');
 <form>
     <input type="button" value="Back" onclick="history.back()">
 </form>
+
+<script>
+    const recipetitle = window.localStorage.getItem('recipe_title');
+
+    document.getElementById('recipetitle').innerText = recipetitle;
+</script>
 
 <?php
 require_once('../layout/footer.php');
