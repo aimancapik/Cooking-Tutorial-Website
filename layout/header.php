@@ -23,14 +23,14 @@
     />
   </head>
   <body>
-  <section id="Home">
+  <section id='Home'>
     <nav>
         <div class="logo">
             <img src="../image/Black Minimalist Cooking Logo.png" />
         </div>
 
         <ul>
-            <li><a href="#Home">Home</a></li>
+            <li><a href="http://localhost/Cooking-Tutorial-Website/lib/index.php">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Menu">Menu</a></li>
             <li><a href="#Gallary">Instructor</a></li>
@@ -43,7 +43,7 @@
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
     </nav>
-    <div class="main">
+    <!-- <div class="main">
     <div class="men_text">
         <h1>Get Fresh<span>Food</span><br />in a Easy Way</h1>
     </div>
@@ -66,5 +66,5 @@
     <div class="main_btn">
     <a href="#">Order Now</a>
     <i class="fa-solid fa-angle-right"></i>
-    </div>
+    </div> -->
 </section>

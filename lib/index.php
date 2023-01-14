@@ -2,6 +2,7 @@
 $title = "Home";
 require_once('../layout/header.php');
 ?>
+  <script src="script/recipe_handler.js"></script>
     <!--About-->
 
     <div class="about" id="About">
@@ -26,7 +27,7 @@ require_once('../layout/header.php');
         </div>
       </div>
 
-      <a href="#" class="about_btn">Order Now</a>
+      <a href="#" class="about_btn">See Recipe</a>
     </div>
 
     <!--Menu-->
@@ -36,31 +37,37 @@ require_once('../layout/header.php');
 
       <div class="menu_box">
         <div class="menu_card">
-          <div class="menu_image">
-            <img src="../image/buger.jpg" />
-          </div>
-
-          <div class="small_card">
-            <i class="fa-solid fa-heart"></i>
-          </div>
-
-          <div class="menu_info">
-            <h2>Buger</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
-            </p>
-            <h3>$20.00</h3>
-            <div class="menu_icon">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
+          <!-- buger ------------------------------------------------------->
+          <form action="http://localhost/Cooking-Tutorial-Website/lib/recipe.php">
+            <div class="menu_image">
+              <img src="../image/buger.jpg" />
             </div>
-            <a href="#" class="menu_btn">Order Now</a>
+
+            <div class="small_card">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+              <h2 id="smoltitle">Buger</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                assumenda voluptates
+              </p>
+              <h3>$20.00</h3>
+              <div class="menu_icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <input type="submit" onclick="passvalues();" href="http://localhost/Cooking-Tutorial-Website/lib/recipe.php" class="menu_btn">See Recipe</input>
+            </div>
           </div>
-        </div>
+
+        </form>
+        <!-- buger ------------------------------------------------------->
+        <!-- pasta -->
 
         <div class="menu_card">
           <div class="menu_image">
@@ -85,7 +92,7 @@ require_once('../layout/header.php');
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="menu_btn">Order Now</a>
+            <a href="#" class="menu_btn">See Recipe</a>
           </div>
         </div>
 
@@ -112,7 +119,7 @@ require_once('../layout/header.php');
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="menu_btn">Order Now</a>
+            <a href="#" class="menu_btn">See Recipe</a>
           </div>
         </div>
 
@@ -139,7 +146,7 @@ require_once('../layout/header.php');
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="menu_btn">Order Now</a>
+            <a href="#" class="menu_btn">See Recipe</a>
           </div>
         </div>
 
@@ -166,7 +173,7 @@ require_once('../layout/header.php');
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="menu_btn">Order Now</a>
+            <a href="#" class="menu_btn">See Recipe</a>
           </div>
         </div>
 
@@ -193,7 +200,7 @@ require_once('../layout/header.php');
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="menu_btn">Order Now</a>
+            <a href="#" class="menu_btn">See Recipe</a>
           </div>
         </div>
 
@@ -220,7 +227,7 @@ require_once('../layout/header.php');
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="menu_btn">Order Now</a>
+            <a href="#" class="menu_btn">See Recipe</a>
           </div>
         </div>
 
@@ -247,7 +254,7 @@ require_once('../layout/header.php');
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="menu_btn">Order Now</a>
+            <a href="#" class="menu_btn">See Recipe</a>
           </div>
         </div>
 
@@ -274,7 +281,7 @@ require_once('../layout/header.php');
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="menu_btn">Order Now</a>
+            <a href="#" class="menu_btn">See Recipe</a>
           </div>
         </div>
 
@@ -301,7 +308,7 @@ require_once('../layout/header.php');
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="menu_btn">Order Now</a>
+            <a href="#" class="menu_btn">See Recipe</a>
           </div>
         </div>
 
@@ -328,7 +335,7 @@ require_once('../layout/header.php');
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="menu_btn">Order Now</a>
+            <a href="#" class="menu_btn">See Recipe</a>
           </div>
         </div>
 
@@ -355,7 +362,7 @@ require_once('../layout/header.php');
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="menu_btn">Order Now</a>
+            <a href="#" class="menu_btn">See Recipe</a>
           </div>
         </div>
       </div>
@@ -375,7 +382,7 @@ require_once('../layout/header.php');
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
             sint eveniet laboriosam
           </p>
-          <a href="#" class="gallary_btn">Order Now</a>
+          <a href="#" class="gallary_btn">See Recipe</a>
         </div>
 
         <div class="gallary_image">
@@ -386,7 +393,7 @@ require_once('../layout/header.php');
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
             sint eveniet laboriosam
           </p>
-          <a href="#" class="gallary_btn">Order Now</a>
+          <a href="#" class="gallary_btn">See Recipe</a>
         </div>
 
         <div class="gallary_image">
@@ -397,7 +404,7 @@ require_once('../layout/header.php');
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
             sint eveniet laboriosam
           </p>
-          <a href="#" class="gallary_btn">Order Now</a>
+          <a href="#" class="gallary_btn">See Recipe</a>
         </div>
 
         <div class="gallary_image">
@@ -408,7 +415,7 @@ require_once('../layout/header.php');
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
             sint eveniet laboriosam
           </p>
-          <a href="#" class="gallary_btn">Order Now</a>
+          <a href="#" class="gallary_btn">See Recipe</a>
         </div>
 
         <div class="gallary_image">
@@ -419,7 +426,7 @@ require_once('../layout/header.php');
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
             sint eveniet laboriosam
           </p>
-          <a href="#" class="gallary_btn">Order Now</a>
+          <a href="#" class="gallary_btn">See Recipe</a>
         </div>
 
         <div class="gallary_image">
@@ -430,7 +437,7 @@ require_once('../layout/header.php');
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
             sint eveniet laboriosam
           </p>
-          <a href="#" class="gallary_btn">Order Now</a>
+          <a href="#" class="gallary_btn">See Recipe</a>
         </div>
       </div>
     </div>
@@ -628,7 +635,7 @@ require_once('../layout/header.php');
             <input placeholder="you Address" />
           </div>
 
-          <a href="#" class="order_btn">Order Now</a>
+          <a href="#" class="order_btn">See Recipe</a>
         </form>
       </div>
     </div>

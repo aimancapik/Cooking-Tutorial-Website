@@ -1,8 +1,10 @@
 <?php
 $title = "User Profile";
 require_once('../layout/header.php');
+
+$mytext = $_POST['myText'];
 ?>
-<script src="script/userprofile_handler.js"></script>
+<!-- <script src="script/userprofile_handler.js"></script> -->
 
 <div>
     <h1>Your Profile</h1>
@@ -13,16 +15,15 @@ require_once('../layout/header.php');
     <p>Data Email</p>
 </div>
 <br>
-<p id="myText" contenteditable >
-    Edit this content. Click save to store it. Click reset to return to the default value.
-</p>
-<button onclick="saveChanges()" >Save</button>
-<button onclick="clearStorage()" >Reset</button>
-
+<form onsubmit="return setText();" method="post" action="">
+    <p><?= $mytext ?></p>
+    
+    <br>
+    <<textarea id="myText" name="myText" value="Edit profile description here." rows="5" cols=""></textarea>
+    <input type="submit" value="Save"></input>
+    <input type="reset" value="Clear"></input>
+</form>
 
 <?php
-require_once('../layout/footer.php');
+  require_once('../layout/footer.php');
 ?>
-
-<!-- aku tiru code ni tapi tu ah tak jadi, cer try tengok sesiapa( https://jsfiddle.net/james2doyle/Rg4ML/ ) -->
-<!-- untuk edit details user -->
