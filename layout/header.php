@@ -40,7 +40,9 @@
         <div class="icon">
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <a href="http://localhost/Cooking-Tutorial-Website/lib/userprofile.php">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
         </div>
     </nav>
     <!-- <div class="main">
